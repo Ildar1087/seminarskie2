@@ -7,30 +7,29 @@
 
 Console.Clear();
 Console.Write("введите число: ");
-int numbDayWeek = int.Parse(Console.ReadLine());
-//Console.Write($"{numbDayWeek} -> {res2 % 10}");
-if (numbDayWeek >= 10 && numbDayWeek < 100)
+int numb = int.Parse(Console.ReadLine());
+if (numb >= 10 && numb < 100)
 {
   Console.WriteLine($"третьей цифры нет!");
-} else if (numbDayWeek >= 100 && numbDayWeek < 1000)
+  return;
+} else if (numb >= 100 && numb < 1000)
 {
-  int result = numbDayWeek;
+  int result = numb;
   int result1 = result % 10;
   Console.Write($"{result1}");
 }
-else if (numbDayWeek >= 1000 && numbDayWeek < 10000)
+else if (numb >= 1000 && numb < 10000)
 {
   Console.WriteLine($"у числа нет середины");
+  return;
 }
-else if (numbDayWeek >= 10000 && numbDayWeek < 100000)
+else if (numb >= 10000 && numb < 100000)
 {
-  int result = numbDayWeek % 1000;
+  int result = numb % 1000;
   int result1 = result / 100;
   Console.Write($"{result1}");
 }
-else if (numbDayWeek >= 100000 && numbDayWeek < 10000000)
+else if (numb >= 100000 && numb < 10000000)
 {
  Console.WriteLine($"дальше нам уже не надо)))");
 }
-
-
