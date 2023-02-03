@@ -8,13 +8,23 @@
 
 
 Console.Clear();
-Console.Write("Введите первое число: ");
+Console.Write("Введите x1 число: ");
 int x = int.Parse(Console.ReadLine());
-Console.Write("Введите второе число: ");
+Console.Write("Введите y1 число: ");
 int y = int.Parse(Console.ReadLine());
-int n1 =7, n2 = 23;
-if (x * x == y && y /x == x ) 
-Console.WriteLine("да");
+if (x * x == y)
+{
+Console.WriteLine("y1 квадрат x1");
+return;
+} 
+if (y * y == x)
+{
+  Console.WriteLine("x1 квадрат y1");
+
+}
 else
-Console.WriteLine("не");
+{
+  Console.WriteLine("не является");
+}
  
+// int n1 =7, n2 = 23;
